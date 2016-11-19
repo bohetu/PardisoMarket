@@ -1,4 +1,2 @@
 all:
-	icpc main.cpp -o main.x -mkl
-run:
-	./main.x
+	icpc main.cpp matrixmarket.cpp -o pardiso_solver -mkl -O3
